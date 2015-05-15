@@ -12,3 +12,13 @@ Switch options include:
 
 Examples
 --------
+
+* Search for a string in all txt files in subdirectories
+`grep -r --include='*.txt' 'string' .`
+* Search for string in text files in a single directory and ignore case
+`grep -ri 'string' *.txt`
+* Give only the file names as a result
+`grep -ril 'string' *.txt`
+* Count the files in which the string appears
+`grep -ril 'string' *.txt | wc -l`
+
